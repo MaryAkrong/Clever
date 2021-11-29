@@ -16,6 +16,7 @@ storefront
 <i class="bi-eye"></i>
 */
 header {
+    padding: 10px;
     background-color: rgb(46, 46, 219);
     color: aliceblue;
     height: 200px;
@@ -23,6 +24,18 @@ header {
 }
 header i{
     color: aliceblue;
+}
+section{
+    float: right;
+    margin-right: 50px;
+}
+section i {
+    margin: 5px;
+}
+h3 {
+    color: antiquewhite;
+    text-align: center;
+    transform: translateY(40px);
 }
 
 .icons {
@@ -54,15 +67,15 @@ button {
 }
 .Export{
     margin: 10px;
-    height: 45px;
-    width: 100px;
+    height: 40px;
+    width: 70px;
 }
 .Import {
-    height:45px;
-    width: 100px;
+    height:40px;
+    width: 70px;
 }
 .lists {
-    transform: translateX(100px);
+    margin-left: 100px;
 }
 table{
     border: 1px solid black;
