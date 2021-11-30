@@ -80,6 +80,10 @@ button {
 }
 .lists {
     margin-left: 100px;
+
+}
+.tables {
+    overflow-x: auto;
 }
 table{
     
@@ -109,18 +113,81 @@ th, td {
       border: 1px solid black;
       height: auto;
       width: 750px;
-      left: 300px;
+      margin-left: 300px;
+      
   }
   .heads{
       margin: 10px;
   }
   .things{
       position: relative;
-      left: 50px;
-      top: 10px;
+      margin-left: 50px;
+      margin-top: 10px;
   }
 
   body{
       font-family: 'Courier New', Courier, monospace;
       font-weight: bold;
   }
+
+  @media screen and (max-width: 450px) {
+    .icons {
+       display: grid;
+       grid-template-columns: 1fr 1fr ;
+    }
+   .container {
+       
+       
+       position: relative;
+       box-sizing: border-box;
+       border: 1px solid black;
+       margin-left: 5px;
+       height: auto;
+       width: auto;
+    }
+    .recent-posts {
+        grid-column-start: 1;
+    }
+     table {
+         padding: 5px;
+         border-collapse: collapse;
+         border-spacing: 0;
+         width: 70%;
+     }
+     .things {
+        margin-left: 5px;
+        margin-top: 5px;
+     }
+  }
+  @media (min-width: 450px) and (max-width: 1000px){
+    .icons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) ;
+        grid-row-gap: 10px;
+     }
+     .recent-posts {
+        grid-column-start: 1;
+    }
+    .settings {
+        grid-column-start: 2;
+    }
+    .container {
+       
+        position: relative;
+        box-sizing: border-box;
+        border: 1px solid black;
+        height: auto;
+        width: 70%;
+        margin-left: 5px;
+     }
+     table {
+        padding: 5px;
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 70%;
+    }
+    .things {
+        margin-left: 5px;
+        margin-top: 5px;
+     }
+    }
